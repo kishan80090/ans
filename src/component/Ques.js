@@ -64,7 +64,7 @@ function Ques() {
 
 <button onClick={()=>{handleb();handleNext();}} className="col1" >Next</button>
 
-<input className="im" type="image" src="pic/c1.jpg"/>
+<input className="im" type="image" src="pic/c2.jpg"/>
 
                 </div>
  }
