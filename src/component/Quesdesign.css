@@ -20,6 +20,10 @@
     cursor: pointer;
     margin-top: -15px;
 }
+.col1:hover{
+  background-color: #2163a8;
+  color:black;
+}
 .col {
     margin-top: 55px;
     display: flex;
@@ -58,24 +62,15 @@
     margin-left: 250px;
 }
 .score{
-    color:rgb(133, 45, 45);
+    color: black;
+    background-color: rgb(140, 218, 218);
 }
-/* .link{
-    
-    margin-top: 50px;
-    margin-left: 8px;
-    color: blue;
-} */
-/* .link1{
-    margin-left: 120px;
-    margin-top: -17px;
-    color: blue;
-} */
+
 .linkedin-name {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
-  color: #0077b5;
+  color: blue;
   text-decoration: none;
   margin-top: 50px;
   animation: floatLeftRight 2s infinite ease-in-out;
@@ -97,7 +92,7 @@
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
-  color: #0077b5;
+  color: red;
   text-decoration: none;
   margin-top: 20px;
   animation: floatLeftRight 2s infinite ease-in-out;

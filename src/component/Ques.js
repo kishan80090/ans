@@ -7,19 +7,6 @@ function Ques() {
     const [que, setQue] = useState(0);
     const [score, setScore] = useState(0);
 
-    const imagep = [
-        "pic/c1.jpg",
-        "pic/c2.jpg",
-        "pic/c7.jpg",
-        "pic/c4.jpg",
-        "pic/c++3.jpg",
-        "pic/c++2.jpg",
-        "pic/blackc++.jpg",
-        "pic/bestc++.jpg",
-        "pic/c++5.jpg",
-        "pic/redc++.jpg"
-    ];
-
     let correctanswer = "";
 
     //********************************* show function ***************************************************
@@ -72,7 +59,6 @@ function Ques() {
         }
 
     };
-
     const test = (e) => {
         if (document.getElementById("a").checked)
             return "a";
@@ -83,6 +69,7 @@ function Ques() {
         if (document.getElementById("d").checked)
             return "d";
         return false;
+
     };
 
     //**************************************** Return ***************************************************
@@ -96,7 +83,7 @@ function Ques() {
                     <h1 className="que">Question_No : {question[que]["ques_no"]}</h1>
                     <h3 className="ans">Question : {question[que]["question"]}</h3>
                     <h4 className="score">✅ Your Scores = {score}/{question.length}</h4>
-
+                    
                     <p>
                         <label><input type='radio' name="r" value="a" id="a" />
                             <b>A: {question[que]["a"]}</b></label>
@@ -122,8 +109,7 @@ function Ques() {
                     </p>
 
                     <button onClick={handleNext} className="col1" id="nextBtn">Next</button>
-
-                    <img className="im" type="image" src={imagep[que]} alt={`Question ${que + 1}`} />
+                    <img src={question[que]["image"]} alt="Question related" className="im" />
 
                     <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">Visit My Github</a>
                     <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a>
@@ -133,5 +119,4 @@ function Ques() {
         </div>
     );
 }
-
 export default Ques;
