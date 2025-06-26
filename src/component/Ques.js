@@ -85,7 +85,7 @@ function Ques() {
                     <h1 className="que">Question_No : {question[que]["ques_no"]}</h1>
                     <h3 className="ans">Question : {question[que]["question"]}</h3>
                     <h4 className="score" >Your Right Scores: {score}/{question.length}</h4>
-{/* <img className="im" src="pic/c1.jpg" alt="quiz visual" /> */}
+
                     <p>
                         <label><input type='radio' name="r" value="a" id="a" />
                         <b>A: {question[que]["a"]}</b></label>
@@ -114,6 +114,17 @@ function Ques() {
                     <button onClick={handleNext} className="col1">Next</button>
 
                     <img className="im" type="image" src={imagep[que]} alt={'${que+1}'} />
+
+                    <a  className="link" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">
+  Visit My Github
+  
+</a>
+<a  className="link1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">
+  Visit My Linkedin
+  
+</a>
+
+
                 </div>
             }
         </div>

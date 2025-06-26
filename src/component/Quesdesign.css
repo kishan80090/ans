@@ -60,3 +60,14 @@
 .score{
     color:rgb(133, 45, 45);
 }
+.link{
+    /* margin: 30px; */
+    margin-top: 50px;
+    margin-left: 8px;
+    color: blue;
+}
+.link1{
+    margin-left: 120px;
+    margin-top: -17px;
+    color: blue;
+}
