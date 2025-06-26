@@ -38,7 +38,7 @@ function Ques() {
             });
 
             const nextBtn = document.getElementById("nextBtn");
-            if (nextBtn) nextBtn.disabled = false; // re-enable if restarting
+            if (nextBtn) nextBtn.disabled = false;
         })
         .catch(error => {
             console.log("Error", error);
@@ -68,9 +68,9 @@ function Ques() {
                 + (score + (givenanswer === correctanswer ? 1 : 0))
                 + "/" + question.length);
 
-            // ✅ Disable button on final click
             e.target.disabled = true;
         }
+
     };
 
     const test = (e) => {
@@ -95,7 +95,7 @@ function Ques() {
 
                     <h1 className="que">Question_No : {question[que]["ques_no"]}</h1>
                     <h3 className="ans">Question : {question[que]["question"]}</h3>
-                    <h4 className="score">✅ Your Scores: {score}/{question.length}</h4>
+                    <h4 className="score">✅ Your Scores = {score}/{question.length}</h4>
 
                     <p>
                         <label><input type='radio' name="r" value="a" id="a" />
@@ -127,7 +127,7 @@ function Ques() {
 
                     <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">Visit My Github</a>
                     <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a>
-
+                    
                 </div>
             }
         </div>
