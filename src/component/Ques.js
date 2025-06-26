@@ -130,7 +130,7 @@ function Ques() {
 
                     
                     <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">Visit My GitHub</a>
-                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a>
+                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My Linkedin</a>
                 </div>
             }
         </div>
