@@ -67,7 +67,6 @@ function Ques() {
         return false;
     };
 
-    // ✅ Restart the quiz
     const restartQuiz = () => {
         setQue(0);
         setScore(0);
@@ -126,14 +125,16 @@ function Ques() {
                     {quizCompleted && (
                         <button className="col3" onClick={restartQuiz}>Restart Quiz</button>
                     )}
-
-                    <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">Visit My GitHub</a>
-                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My Linkedin</a>
+                    
+                        
+                    <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer"> <img type="image" src="pic/github.jpg" alt=""/> Visit My GitHub </a>
+                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My Linkedin <img type="image" className="linked" src="pic/linkedin.jpg" alt=""/> </a>
 
                 </div>
             }
         </div>
     );
 }
+
 
 export default Ques;
