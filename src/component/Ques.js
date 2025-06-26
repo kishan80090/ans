@@ -33,7 +33,6 @@ function Ques() {
         });
     };
 
-    // ✅ Handle answer selection and scoring
     const handleNext = (e) => {
         const selected = document.querySelector('input[name="r"]:checked');
         if (!selected || selected.id === "e") {
@@ -128,9 +127,9 @@ function Ques() {
                         <button className="col3" onClick={restartQuiz}>Restart Quiz</button>
                     )}
 
-                    
                     <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">Visit My GitHub</a>
                     <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My Linkedin</a>
+
                 </div>
             }
         </div>
