@@ -109,10 +109,11 @@ function Ques() {
                     </p>
 
                     <button onClick={handleNext} className="col1" id="nextBtn">Next</button>
+
                     <img src={question[que]["image"]} alt="Question related" className="im" />
 
                     <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">Visit My Github</a>
-                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a>
+                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">Visit My Linkedin</a>
                     
                 </div>
             }
