@@ -11,7 +11,13 @@ function Ques() {
 "pic/c1.jpg",
 "pic/c2.jpg",
 "pic/c6.jpg",
-"pic/c7.jpg"
+"pic/bluec++.jpg",
+"pic/c++3.jpg",
+"pic/c++2.jpg",
+"pic/blackc++.jpg",
+"pic/bestc++.jpg",
+"pic/c++5.jpg",
+"pic/redc++.jpg"
 
     ];
 
