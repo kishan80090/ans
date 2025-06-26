@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>  
+    Coconut: <input type="radio" name="t" id="a" /><br/>
+    Apple:    <input type="radio" name="t" id="b"/><br/>
+    Banana:  <input type="radio" name="t" id="c" /><br/>
+    Grieps:  <input type="radio" name="t" id="d" /><br/>
+    <button onclick="f()">click</button>
+</center>
+<script>
+    function f()
+    {
+        let x=f1();
+        alert(x);
+    }
+    function f1 () {
+if(document.getElementById("a").checked)
+return "a";
+if(document.getElementById("b").checked)
+return "b";
+if(document.getElementById("c").checked)
+return "c";
+if(document.getElementById("d").checked)
+return "d";
+return false;
+
+
+    }
+</script>
+ 
+</body>
+</html>
