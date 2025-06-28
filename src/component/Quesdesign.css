@@ -26,8 +26,8 @@
     margin-top: -15px;
 }
 .col1:hover{
-  background-color: #2163a8;
-  color:black;
+  background-color: #4d80b6;
+  color: red;
 }
 .col {
     margin-top: 55px;
@@ -51,7 +51,7 @@
 
 }
 .col3:hover{
-  background-color: rgb(46, 163, 46);
+  background-color: red;
 }
 
 .que {
@@ -95,7 +95,7 @@
   color: blue;
   text-decoration: none;
   margin-top: 50px;
-  animation: floatLeftRight 2s infinite ease-in-out;
+  animation: floatLeftRight 3s infinite ease-in-out;
   position: relative;
 }
 
@@ -116,8 +116,8 @@
   font-weight: bold;
   color: red;
   text-decoration: none;
-  margin-top: 20px;
-  animation: floatLeftRight 2s infinite ease-in-out;
+  margin-top: 10px;
+  animation: floatLeftRight 3s infinite ease-in-out;
   position: relative;
 }
 
@@ -130,6 +130,49 @@
 .linkedin-name1:hover {
   color: #005983;
   text-decoration: underline;
+}
+/********  Animetion   *******/
+
+.firework-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.fire-spark {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: explode-pop 1.2s ease-out forwards;
+  box-shadow: 0 0 15px white;
+  opacity: 0.8;
+}
+
+@keyframes explode-pop {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5) translate(30px, -30px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5) translate(-150px, 150px);
+    opacity: 0;
+  }
+}
+.color{
+  color: black;
+}
+.color1{
+  color: darkgreen;
 }
 
 
