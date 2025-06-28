@@ -1,6 +1,6 @@
 .col2 {
     height: 35px;
-    width: 300px;
+    width: 310px;
     color:red;
     margin-right: 200px;
     font-size: 20px;
@@ -26,8 +26,8 @@
     margin-top: -15px;
 }
 .col1:hover{
-  background-color: #4d80b6;
-  color: red;
+  background-color: rgb(122, 122, 36);
+  color: white;
 }
 .col {
     margin-top: 55px;
@@ -92,7 +92,7 @@
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
-  color: blue;
+  color: black;
   text-decoration: none;
   margin-top: 50px;
   animation: floatLeftRight 3s infinite ease-in-out;
@@ -106,7 +106,6 @@
 }
 
 .linkedin-name:hover {
-  color: #005983;
   text-decoration: underline;
 }
 
@@ -114,7 +113,7 @@
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: #005983;
   text-decoration: none;
   margin-top: 10px;
   animation: floatLeftRight 3s infinite ease-in-out;
@@ -128,8 +127,7 @@
 }
 
 .linkedin-name1:hover {
-  color: #005983;
-  text-decoration: underline;
+  text-decoration:underline;
 }
 /********  Animetion   *******/
 
@@ -171,8 +169,6 @@
 .color{
   color: black;
 }
-.color1{
-  color: darkgreen;
-}
+
 
 

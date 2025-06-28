@@ -137,9 +137,9 @@ function Ques() {
         if (nextBtn) nextBtn.disabled = false;
     };
 
-    const tabl = () => {
+    const finalresult = () => {
 
-     let right=tabl();
+     let right=finalresult();
 
         correctanswer=question[que]["correct"];
 
@@ -154,7 +154,7 @@ function Ques() {
 
         <div className="col">
             
-            <button onClick={show} className="col2"><a className="color" >➔ </a><b><i>Start Quiz<a className="color" > /C/C++</a> </i> <a className="color1" >⮯</a></b></button>
+            <button onClick={show} className="col2"><a className="color" ><b>Welcome</b> ➔ </a><b><i>Start Quiz<a className="color" > /C/C++</a> </i></b></button>
 
             {question.length > 0 &&
 
@@ -164,7 +164,7 @@ function Ques() {
 
                     <h3 className="ans">✯ Question: {question[que]["question"]}</h3>
 
-                    <h4 className="score">✔ Your Score: {score}/{question.length}</h4>
+                    <h4 className="score">🏆🎯 Your Score: {score}/{question.length}</h4>
 
                     <p>
                         <label><input type='radio' name="r" value="a" id="a"/>
@@ -197,7 +197,7 @@ function Ques() {
                         <img src={question[que]["image"]} alt={`Question ${que + 1}`} className="im"/>
                     )}
                     
-{/*************************Animation******************************************* */}
+{/************************* Animation ******************************************* */}
 {showFirework && (
          <div className="firework-container">
            {[...Array(20)].map((_, i) => (
