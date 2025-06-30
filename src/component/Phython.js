@@ -77,12 +77,12 @@ function Phython() {
     };
 
     return (
-        <div className="col">
+        <div className="div">
             {question.length > 0 && !quizCompleted && (
-                <div className="options">
-                    <h1 className="que">Question No: {question[que]["ques_no"]}</h1>
-                    <h3 className="ans">✯ Question: {question[que]["question"]}</h3>
-                    <h4 className="score">🏆🎯 Your Score: {score}/{question.length}</h4>
+                <div className="opt">
+                    <h1 className="question">Question No: {question[que]["ques_no"]}</h1>
+                    <h3 className="ans1">✯ Question: {question[que]["question"]}</h3>
+                    <h4 className="score1">🏆🎯 Your Score: {score}/{question.length}</h4>
 
                     <p><label><input type='radio' name="r" value="a" id="a" /> <b>A: {question[que]["a"]}</b></label></p>
                     <p><label><input type='radio' name="r" value="b" id="b" /> <b>B: {question[que]["b"]}</b></label></p>
@@ -95,11 +95,11 @@ function Phython() {
                 
 
                     {showFirework && (
-                        <div className="firework-container">
+                        <div className="firework">
                             {[...Array(20)].map((_, i) => (
                                 <div
                                     key={i}
-                                    className="fire-spark"  
+                                    className="fire"  
                                     style={{
                                         top: `${Math.random() * 100}%`,
                                         left: `${Math.random() * 100}%`,
@@ -146,14 +146,14 @@ function Phython() {
 
             {question.length > 0 && (
                 <>
-                    <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">
+                    <a className="linkedin" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">
                         <img src="pic/github.jpg" alt="GitHub" /> Visit My GitHub ✫
                     </a>
-                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">
+                    <a className="linkedin1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">
                         ✫ Visit My Linkedin <img className="linked" src="pic/linkedin.jpg" alt="LinkedIn" />
                     </a>
-                    <p className="linkedin-name2">
-                        <img className="padd" src="pic/kishan.jpg" alt="Kishan" />Kishan Kumar Kannaujiya
+                    <p className="linkedin2">
+                        <img className="paddi" src="pic/kishan.jpg" alt="Kishan" />Kishan Kumar Kannaujiya
                     </p>
                 </>
             )}
