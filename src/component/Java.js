@@ -10,7 +10,7 @@ function Java() {
     const [showFirework, setShowFirework] = useState(false);
 
     useEffect(() => {
-        show(); // Auto-start quiz on load
+        show(); 
     }, []);
 
     const show = () => {
@@ -91,9 +91,7 @@ function Java() {
                     <p><input style={{ display: "none" }} type='radio' name="r" value="e" id="e" defaultChecked /></p>
 
                     <button onClick={handleNext} className="col1" id="nextBtn">Next</button>
-
-                
-
+                    
                     {showFirework && (
                         <div className="firework-container">
                             {[...Array(20)].map((_, i) => (
