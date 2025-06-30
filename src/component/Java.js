@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './java.css';
+import './Java.css';
 import axios from "axios";
 
 function Java() {
@@ -10,7 +10,7 @@ function Java() {
     const [showFirework, setShowFirework] = useState(false);
 
     useEffect(() => {
-        show();
+        show(); // Auto-start quiz on load
     }, []);
 
     const show = () => {
@@ -31,6 +31,7 @@ function Java() {
             console.log("Error", error);
         });
     };
+
     const handleNext = (e) => {
         store();
         const selected = document.querySelector('input[name="r"]:checked');
@@ -44,7 +45,7 @@ function Java() {
         question[que]["answer"] = givenanswer;
 
         if (givenanswer === correctanswer) {
-            setScore(prev => prev + 1);
+            setScore(prevScore => prevScore + 1);
             setShowFirework(true);
             setTimeout(() => setShowFirework(false), 2000);
         }
@@ -59,6 +60,10 @@ function Java() {
         }
     };
 
+    const store = () => {
+        localStorage.setItem("questions", JSON.stringify(question));
+    };
+
     const test = () => {
         if (document.getElementById("a").checked) return "a";
         if (document.getElementById("b").checked) return "b";
@@ -67,26 +72,13 @@ function Java() {
         return false;
     };
 
-    const store = () => {
-        localStorage.setItem("questions", JSON.stringify(question));
-    };
-
     const restartQuiz = () => {
-        setQue(0);
-        setScore(0);
-        setQuizCompleted(false);
-        const options = ["a", "b", "c", "d", "e"];
-        options.forEach(id => {
-            const opt = document.getElementById(id);
-            if (opt) opt.checked = false;
-        });
-        const nextBtn = document.getElementById("nextBtn");
-        if (nextBtn) nextBtn.disabled = false;
+        show();
     };
 
     return (
         <div className="col">
-                 {question.length > 0 && !quizCompleted && (
+            {question.length > 0 && !quizCompleted && (
                 <div className="options">
                     <h1 className="que">Question No: {question[que]["ques_no"]}</h1>
                     <h3 className="ans">✯ Question: {question[que]["question"]}</h3>
@@ -100,12 +92,14 @@ function Java() {
 
                     <button onClick={handleNext} className="col1" id="nextBtn">Next</button>
 
+                
+
                     {showFirework && (
                         <div className="firework-container">
                             {[...Array(20)].map((_, i) => (
                                 <div
                                     key={i}
-                                    className="fire-spark"
+                                    className="fire-spark"  
                                     style={{
                                         top: `${Math.random() * 100}%`,
                                         left: `${Math.random() * 100}%`,
@@ -122,14 +116,14 @@ function Java() {
             {quizCompleted && (
                 <>
                     <br />
-                    <table border="1">
+                    <table border="1" className="summary-table">
                         <thead>
                             <tr>
-                                <th>Q. No</th>
-                                <th>Question</th>
-                                <th>Your Answer</th>
-                                <th>Correct Answer</th>
-                                <th>Result</th>
+                                <th className="quecolor" >Q. No</th>
+                                <th className="quecolor" >Question</th>
+                                <th className="quecolor" >Your Answer</th>
+                                <th className="quecolor" >Correct Answer</th>
+                                <th className="quecolor" >Result</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -147,6 +141,20 @@ function Java() {
                         </tbody>
                     </table>
                     <button className="col3" onClick={restartQuiz}>Restart Quiz ⟲</button>
+                </>
+            )}
+
+            {question.length > 0 && (
+                <>
+                    <a className="linkedin-name" href="https://github.com/kishan80090/ans/tree/master/src/component" target="_blank" rel="noopener noreferrer">
+                        <img src="pic/github.jpg" alt="GitHub" /> Visit My GitHub ✫
+                    </a>
+                    <a className="linkedin-name1" href="https://www.linkedin.com/in/kishan-kumar-kannaujiya-858465350" target="_blank" rel="noopener noreferrer">
+                        ✫ Visit My Linkedin <img className="linked" src="pic/linkedin.jpg" alt="LinkedIn" />
+                    </a>
+                    <p className="linkedin-name2">
+                        <img className="padd" src="pic/kishan.jpg" alt="Kishan" />Kishan Kumar Kannaujiya
+                    </p>
                 </>
             )}
         </div>

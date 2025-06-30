@@ -8,10 +8,12 @@ function Home() {
             
             <div className="button-container" >
 
-        <Link to="/ques" ><button className="home-button"><strong>c++</strong></button>
+        <Link to="/ques">
+        <button className="home-button"><strong>c++</strong></button>
         </Link>
 
-        <Link to="/java" ><button className="home-button"><strong>java</strong></button>
+        <Link to="/java">
+        <button className="home-button"><strong>java</strong></button>
         </Link>
 
 
