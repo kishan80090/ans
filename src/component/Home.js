@@ -15,6 +15,7 @@ function Home() {
         <Link to="/java">
         <button className="home-button"><strong>java</strong></button>
         </Link>
+        <h1></h1>
 
 
 </div>
