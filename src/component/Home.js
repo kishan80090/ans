@@ -12,14 +12,14 @@ function Home() {
         <button className="home-button"><strong>c++</strong></button>
         </Link>
 
-        <Link to="/java">
+        {/* <Link to="/java">
         <button className="home-button"><strong>java</strong></button>
-        </Link>
+        </Link> */}
 
         
-        <Link to="/phython">
+        {/* <Link to="/phython">
         <button className="home-button"><strong>Phython</strong></button>
-        </Link>
+        </Link> */}
         
 
 
