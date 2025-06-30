@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import './Quesdesign.css';
+import './java.css';
 import axios from "axios";
 
-function Ques() {
+function Java() {
     const [question, setQuestion] = useState([]);
     const [que, setQue] = useState(0);
     const [score, setScore] = useState(0);
@@ -14,7 +14,7 @@ function Ques() {
     }, []);
 
     const show = () => {
-        const baseURL = 'https://kishan80090.github.io/jsondata/products.json';
+        const baseURL = 'https://kishan80090.github.io/jsondata1/data.json';
         axios.get(baseURL).then((response) => {
             setQuestion(response.data);
             setQue(0);
@@ -31,7 +31,6 @@ function Ques() {
             console.log("Error", error);
         });
     };
-
     const handleNext = (e) => {
         store();
         const selected = document.querySelector('input[name="r"]:checked');
@@ -87,7 +86,7 @@ function Ques() {
 
     return (
         <div className="col">
-            {question.length > 0 && !quizCompleted && (
+                 {question.length > 0 && !quizCompleted && (
                 <div className="options">
                     <h1 className="que">Question No: {question[que]["ques_no"]}</h1>
                     <h3 className="ans">✯ Question: {question[que]["question"]}</h3>
@@ -100,10 +99,6 @@ function Ques() {
                     <p><input style={{ display: "none" }} type='radio' name="r" value="e" id="e" defaultChecked /></p>
 
                     <button onClick={handleNext} className="col1" id="nextBtn">Next</button>
-
-                    {question[que]["image"] && (
-                        <img src={question[que]["image"]} alt={`Question ${que + 1}`} className="im" />
-                    )}
 
                     {showFirework && (
                         <div className="firework-container">
@@ -158,4 +153,4 @@ function Ques() {
     );
 }
 
-export default Ques;
+export default Java;
