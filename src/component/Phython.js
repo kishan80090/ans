@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import './Quesdesign.css';
+import './Phython.css';
 import axios from "axios";
 
-function Ques() {
+function Phython() {
     const [question, setQuestion] = useState([]);
     const [que, setQue] = useState(0);
     const [score, setScore] = useState(0);
@@ -10,11 +10,11 @@ function Ques() {
     const [showFirework, setShowFirework] = useState(false);
 
     useEffect(() => {
-        show(); 
+        show(); // Auto-start quiz on load
     }, []);
 
     const show = () => {
-        const baseURL = 'https://kishan80090.github.io/jsondata/products.json';
+        const baseURL = 'https://kishan80090.github.io/jsondata2/jdata.json';
         axios.get(baseURL).then((response) => {
             setQuestion(response.data);
             setQue(0);
@@ -90,11 +90,9 @@ function Ques() {
                     <p><label><input type='radio' name="r" value="d" id="d" /> <b>D: {question[que]["d"]}</b></label></p>
                     <p><input style={{ display: "none" }} type='radio' name="r" value="e" id="e" defaultChecked /></p>
 
-                    <button onClick={handleNext} className="col1" id="nextBtn">Next</button><br/><br/>
+                    <button onClick={handleNext} className="col1" id="nextBtn">Next</button>
 
-                    {question[que]["image"] && (
-                        <img src={question[que]["image"]} alt={`Question ${que + 1}`} className="im" />
-                    )}
+                
 
                     {showFirework && (
                         <div className="firework-container">
@@ -163,4 +161,4 @@ function Ques() {
     );
 }
 
-export default Ques;
+export default Phython;

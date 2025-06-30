@@ -15,7 +15,12 @@ function Home() {
         <Link to="/java">
         <button className="home-button"><strong>java</strong></button>
         </Link>
-        <h1></h1>
+
+        
+        <Link to="/phython">
+        <button className="home-button"><strong>Phython</strong></button>
+        </Link>
+        
 
 
 </div>
